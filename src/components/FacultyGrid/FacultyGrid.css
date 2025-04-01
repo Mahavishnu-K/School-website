@@ -1,0 +1,111 @@
+/* FacultyGrid.css */
+
+.faculty-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 70px 20px;
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #0F110F;
+    text-transform: uppercase;
+  }
+  
+  .faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    width: 100%;
+  }
+  
+  .faculty-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .faculty-image-container {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+  }
+  
+  .faculty-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .faculty-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .faculty-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3B3663;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .faculty-position {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #696687;
+    margin: 0;
+  }
+  
+  .faculty-specialization,
+  .faculty-experience {
+    font-size: 0.9rem;
+    color: #696687;
+    margin: 0;
+  }
+  
+  .faculty-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #3B3663;
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 900px) {
+    .faculty-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .faculty-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .faculty-card {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .faculty-image-container {
+      height: 250px;
+    }
+  }

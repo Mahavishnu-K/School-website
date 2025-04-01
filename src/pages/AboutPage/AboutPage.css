@@ -1,0 +1,408 @@
+.about-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
+    font-family: 'Inter', 'Rubik', sans-serif;
+}
+
+/* Common Section Styles */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 70px 20px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #0F110F;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #696687;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 520;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Academic Section */
+.academic-section {
+    background: linear-gradient(180deg, rgba(0, 210, 255, 0.2) 0%, rgba(58, 255, 217, 0.2) 100%);
+    border-radius: 20px;
+    padding: 50px 40px;
+    margin-top: 50px;
+}
+
+.academic-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.academic-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #3B3663;
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+}
+
+/* Faculty Section */
+.faculty-section {
+    margin-top: 30px;
+}
+
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+}
+
+/* For smaller screens, adjust the columns */
+@media (max-width: 1100px) {
+    .faculty-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .faculty-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Center the last item when it's alone in its row */
+.faculty-grid > *:last-child:nth-child(3n-2) {
+    grid-column: 2;
+}
+
+/* Reset for 2-column layout */
+@media (max-width: 1100px) {
+    .faculty-grid > *:last-child:nth-child(3n-2) {
+        grid-column: auto;
+    }
+    
+    .faculty-grid > *:last-child:nth-child(2n-1) {
+        grid-column: 1 / span 2;
+        justify-self: center;
+        max-width: 300px;
+    }
+}
+
+.faculty-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(183, 233, 227);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-image-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden; /* Added this to ensure image stays within border radius */
+}
+
+.faculty-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: none; /* Removing any background */
+    display: block; /* Prevents any extra space */
+}
+
+.faculty-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    padding-top: 12px; /* Added padding to create space between image and text */
+}
+
+.faculty-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3B3663;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.faculty-position {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2f2e3c;
+    margin: 0;
+}
+
+.faculty-specialization,
+.faculty-experience {
+    font-size: 0.9rem;
+    color: #2f2e3c;
+    font-weight: 500;
+    margin: 0;
+}
+
+.faculty-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #3B3663;
+    margin-top: 10px;
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Infrastructure Section */
+.infrastructure-section {
+    border-radius: 20px;
+    padding: 40px 40px;
+}
+
+.infrastructure-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+}
+
+.infrastructure-item {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.infrastructure-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.infrastructure-image-container {
+    min-width: 400px;
+    max-width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.infrastructure-image {
+    width: 100%;
+    height: 200px;
+    background-color: #e0e0e0;
+}
+
+.infrastructure-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.infrastructure-details h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3B3663;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.infrastructure-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #3B3663;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* School Identity Section */
+.school-identity-section {
+    border-radius: 20px;
+    padding: 50px 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.school-identity-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.school-logo-container {
+    min-width: 500px;
+    max-width: 500px;
+    border-radius: 25px; /* Adjust this value for more or less rounding */
+    overflow: hidden;
+}
+
+.school-logo {
+    width: 100%;
+    height: auto;
+    border-radius: 25px; /* Ensure the image follows the rounded square shape */
+    object-fit: cover;
+}
+
+
+.school-identity-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.school-identity-details h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #3B3663;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.school-identity-details p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #3B3663;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Placeholder image styling */
+.placeholder-image {
+    background: linear-gradient(145deg, #f0f0f0, #d4d4d4);
+    background-size: cover;
+}
+
+/* Media Queries */
+@media (max-width: 1030px) {
+    .infrastructure-item, 
+    .infrastructure-item.reverse,
+    .school-identity-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .infrastructure-image-container,
+    .school-logo-container {
+        margin-bottom: 20px;
+    }
+    
+    .infrastructure-details p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .faculty-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 840px) {
+    .about-section,
+    .academic-section,
+    .infrastructure-section,
+    .school-identity-section {
+        padding: 50px 15px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .academic-content p,
+    .infrastructure-details p,
+    .school-identity-details p {
+        font-size: 1rem;
+    }
+    
+    .infrastructure-details h3 {
+        font-size: 1.3rem;
+    }
+    
+    .school-identity-details h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .faculty-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faculty-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .faculty-image-container {
+        height: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-section,
+    .academic-section,
+    .infrastructure-section,
+    .school-identity-section {
+        padding: 40px 15px;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .faculty-info {
+        padding: 15px;
+    }
+    
+    .faculty-name,
+    .infrastructure-details h3 {
+        font-size: 1.2rem;
+    }
+    
+    .faculty-position {
+        font-size: 1rem;
+    }
+    
+    .faculty-description,
+    .faculty-specialization,
+    .faculty-experience,
+    .infrastructure-details p,
+    .school-identity-details p {
+        font-size: 0.95rem;
+    }
+    
+    .infrastructure-image {
+        height: 160px;
+    }
+    
+    .school-identity-details h2 {
+        font-size: 1.5rem;
+    }
+    
+    .infrastructure-image-container {
+        min-width: 100%;
+    }
+}

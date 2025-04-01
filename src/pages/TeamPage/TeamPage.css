@@ -1,0 +1,344 @@
+/* Leadership Team Page Styles */
+.leadership-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Hero Section */
+.leadership-hero-section {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.leadership-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.leadership-hero-content h2 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: #0F110F;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.leadership-hero-content p {
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+    color: #696687;
+    max-width: 600px;
+}
+
+.leadership-hero-bg-elements {
+    z-index: -2;
+}
+
+.leadership-circle-blue,
+.leadership-circle-sandal {
+    position: absolute;
+    top: 100px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    filter: blur(100px);
+    border-radius: 50%;
+    background-color: #0062ffaf;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.leadership-circle-sandal {
+    top: 50px;
+    left: -50px;
+    background-color: #ff9f0fc5;
+}
+
+/* Leadership Team Section */
+.leadership-team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.leadership-featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Featured card (Correspondent) */
+.leadership-card.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leadership-image-container.featured {
+    width: 300px;
+    height: 350px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leadership-image-container.featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Zigzag layout for other team members */
+.leadership-team-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.leadership-card-flex {
+    display: flex;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    gap: 40px; 
+    transition: all 0.3s ease;
+    justify-content: space-between; 
+}
+
+/* Even numbered cards */
+.leadership-card-flex.even {
+    flex-direction: row;
+}
+
+/* Odd numbered cards (reversed layout) */
+.leadership-card-flex.odd {
+    flex-direction: row-reverse;
+}
+
+.leadership-image-container-flex {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0 20px; /* Add margin on both sides */
+}
+
+.leadership-image-container-flex img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.leadership-info-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px; /* Add padding on both sides */
+    flex: 1; /* Allow the info section to grow and take available space */
+}
+
+/* Even card text alignment */
+.leadership-card-flex.even .leadership-info-flex {
+    text-align: left;
+}
+
+/* Odd card text alignment */
+.leadership-card-flex.odd .leadership-info-flex {
+    text-align: right;
+}
+
+/* Text styles for both featured and flex cards */
+.leadership-role {
+    color: #F4560D;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.leadership-card.featured .leadership-role {
+    font-size: 1.5rem;
+}
+
+.leadership-name {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    color: #3B3663;
+}
+
+.leadership-card.featured .leadership-name {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.leadership-credentials {
+    font-size: 0.9rem;
+    color: #696687;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 10px;
+}
+
+.leadership-description {
+    font-size: 1.2rem;
+    color: #696687;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+}
+
+.leadership-card.featured .leadership-description {
+    font-size: 1.3rem;
+    max-width: 500px;
+}
+
+/* Quote Section */
+.leadership-quote-section {
+    margin-top: 70px;
+    padding: 40px 20px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.leadership-quote-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.leadership-quote-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #3B3663;
+    font-family: 'Inter', sans-serif;
+}
+
+.leadership-quote-content p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #696687;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1210px) {
+    .leadership-hero-section {
+        max-width: 800px;
+    }
+    
+    .leadership-hero-content h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 840px) {
+    .leadership-hero-section {
+        width: 90%;
+    }
+    
+    .leadership-quote-content h3 {
+        font-size: 1.6rem;
+    }
+    
+    /* Adjust text alignment for smaller screens */
+    .leadership-card-flex.even .leadership-info-flex,
+    .leadership-card-flex.odd .leadership-info-flex {
+        text-align: left;
+    }
+    
+    /* Reduce spacing on smaller screens */
+    .leadership-card-flex {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Reset zigzag layout on mobile - stack everything */
+    .leadership-card-flex.even,
+    .leadership-card-flex.odd {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .leadership-info-flex {
+        padding: 20px 0 0 0;
+        align-items: center;
+    }
+    
+    /* Center text on mobile for all cards */
+    .leadership-card-flex.even .leadership-info-flex,
+    .leadership-card-flex.odd .leadership-info-flex {
+        text-align: center;
+    }
+    
+    .leadership-image-container-flex {
+        width: 120px;
+        height: 120px;
+        margin: 0; /* Remove horizontal margin on mobile */
+    }
+    
+    .leadership-hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .leadership-quote-content p,
+    .leadership-hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .leadership-hero-section {
+        height: auto;
+        min-height: 40vh;
+    }
+    
+    .leadership-hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .leadership-quote-content h3 {
+        font-size: 1.5rem;
+    }
+}
