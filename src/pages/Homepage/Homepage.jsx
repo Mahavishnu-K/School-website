@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import bulb from '../../assets/bulb.png'
-import coreValueBg from '../../assets/core_value_bg.png'
 import dotted_path from '../../assets/dotted_path.png'
 import jayam from '../../assets/jayam.png'
 import mission from '../../assets/mission.png'
@@ -21,29 +20,21 @@ import heroVideo from '../../assets/hero-video.mp4'
 import './HomePage.css'
 
 const HomePage = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
 
     const navigate = useNavigate();
     
-    // Add this for the gallery
     const [activeGalleryIndex, setActiveGalleryIndex] = useState(0);
     
-    // Gallery images - in a real implementation, replace with your actual imported images
     const galleryImages = [
-        // First slide images
         [p1, p2, p3],
-        // Second slide images
         [p4, p5, p6],
-        // Third slide images
         [p7, p8, p9]
     ];
     
-    // Function to handle gallery navigation
     const handleGalleryDotClick = (index) => {
         setActiveGalleryIndex(index);
     };
     
-    // Auto-rotate gallery images every 5 seconds
     useEffect(() => {
         const galleryInterval = setInterval(() => {
             setActiveGalleryIndex((prevIndex) => 
@@ -56,7 +47,6 @@ const HomePage = () => {
 
     return (
         <div className='home-page-container'>
-            {/* Video Section */}
             <div className="home-page-video-section">
                 <video 
                     className="home-page-video" 

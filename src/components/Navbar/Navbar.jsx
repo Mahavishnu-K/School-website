@@ -29,7 +29,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className='logo-container'>
                 <img src={logo} alt="Logo" className="logo" />
-                <h3>Jayam Vidyashram CBSE</h3>
+                <h3>Jayam Vidyashram School CBSE</h3>
             </div>
             <div className={`nav-links ${isNavActive ? 'nav-active' : ''}`}>
                 {[
