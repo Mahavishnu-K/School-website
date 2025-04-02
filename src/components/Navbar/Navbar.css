@@ -74,6 +74,7 @@
 
     .logo-container{
       gap: 10px;
+      cursor: pointer;
     }
     
     .logo-container h3{
