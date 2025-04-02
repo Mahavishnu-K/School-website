@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../../assets/s_logo.png'; 
 import './Navbar.css';
 
 const Navbar = () => {
     const [isNavActive, setIsNavActive] = useState(false);
     const { pathname } = useLocation();
+    const navigate = useNavigate();
     
     useEffect(() => {
         setIsNavActive(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
     
     return (
         <nav className="navbar">
-            <div className='logo-container'>
+            <div className='logo-container' onClick={() => {navigate('/')}}>
                 <img src={logo} alt="Logo" className="logo" />
                 <h3>Jayam Vidyashram School CBSE</h3>
             </div>
