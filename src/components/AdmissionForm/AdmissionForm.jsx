@@ -47,7 +47,7 @@ const AdmissionPage = () => {
         setStatus({ message: '', isError: false });
         
         try {
-            const response = await fetch('http://localhost:5000/api/submit-admission', {
+            const response = await fetch('https://jayam-vidyashram.onrender.com/api/submit-admission', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
