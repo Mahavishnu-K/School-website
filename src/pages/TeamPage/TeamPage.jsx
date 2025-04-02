@@ -54,7 +54,7 @@ const TeamPage = () => {
         {
             role: 'ADMIN OFFICER',
             name: 'K. Sumathi',
-            credentials: 'M.Com., M.S.W, M.B.A., M.Lis., B.Ed',
+            credentials: 'M.Com., M.B.A., M.S.W., M.Lis., B.Ed.',
             description: 'Manages administrative staff and operations. Responsible for record keeping, human resources, and ensuring efficient administrative processes.',
             imageUrl: tm7,
         },

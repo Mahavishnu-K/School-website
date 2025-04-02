@@ -95,8 +95,8 @@ const ContactPage = () => {
                 
                 <div className="contact-detail">
                 <h4>Address:</h4>
-                <p>763P+3XW, Tindivanam Rd,</p>
-                <p>Kil Pennathur,</p>
+                <p>kalpoondi Salai</p>
+                <p>Kil Pennathur, Tiruvannamalai Dt</p>
                 <p>Tamil Nadu 604601</p>
                 </div>
             </div>
@@ -178,7 +178,7 @@ const ContactPage = () => {
         {/* Map Section */}
         <div className="map-container">
             <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d177692.3556122802!2d79.28821454110845!3d12.22485402529369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bacc970d204b6a1%3A0x9cb52b395a203e31!2sJAYAM%20VIDYASHRAM%20SCHOOL%20KILPENNATHUR!5e0!3m2!1sen!2sin!4v1743479955188!5m2!1sen!2sin" 
+            src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.935378144456!2d79.2375096!3d12.252652399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bacc9c4063c907b%3A0x8ffb8f6f09ffe140!2sJAYAM%20VIDYASHRAM%20SCHOOL%20KILPENNATHUR%2C%20TIRUVANNAMALAI%20-%20604601!5e0!3m2!1sen!2sin!4v1743589854400!5m2!1sen!2sin"
             width="100%" 
             height="400" 
             style={{ border: 0 }} 
