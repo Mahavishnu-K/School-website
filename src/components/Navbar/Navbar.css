@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     gap: 20px;
   }
 
@@ -79,6 +80,7 @@
     
     .logo-container h3{
       font-size: 15px;
+      cursor: pointer;
     }
 
     .nav-links a {
