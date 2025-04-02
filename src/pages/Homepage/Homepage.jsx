@@ -13,6 +13,9 @@ import p6 from '../../assets/gallery/g17.jpg'
 import p7 from '../../assets/gallery/g18.jpg'
 import p8 from '../../assets/gallery/g19.jpg'
 import p9 from '../../assets/gallery/g20.jpg'
+import p10 from '../../assets/gallery/g1.jpg'
+import p11 from '../../assets/gallery/g4.jpg'
+import p12 from '../../assets/gallery/g6.jpg'
 import rocket from '../../assets/rocket.png'
 import scratch from '../../assets/scratch.png'
 import vision from '../../assets/vision.png'
@@ -77,9 +80,9 @@ const HomePage = () => {
                 <div className="home-page-hero-bg-elements">
                     <div className="home-page-hero-circle-blue"></div>
                     <div className="home-page-hero-circle-sandal"></div>
-                    <img src={p1} alt="" className='p1'/>
-                    <img src={p2} alt="" className='p2'/>
-                    <img src={p3} alt="" className='p3'/>
+                    <img src={p10} alt="" className='p1'/>
+                    <img src={p11} alt="" className='p2'/>
+                    <img src={p12} alt="" className='p3'/>
                     <img src={bulb} alt="" className='bulb'/>
                     <img src={rocket} alt="" className='rocket'/>
                     <img src={dotted_path} alt="" className='dotted_path'/>
