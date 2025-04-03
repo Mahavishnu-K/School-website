@@ -89,7 +89,7 @@ const HomePage = () => {
                     <img src={scratch} alt="" className='scratch'/>
                 </div>
                 <div className='admission-button-container'>
-                    <button className='admission-button' onClick={() => {navigate('admission-form')}}>Admission</button>
+                    <a href='/admission-form'><button className='admission-button'>Admission</button></a>
                 </div>
             </div>
 

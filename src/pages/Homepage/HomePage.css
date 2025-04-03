@@ -173,6 +173,10 @@
     justify-content: center;
 }
 
+.admission-button-container a{
+    text-decoration: none;
+}
+
 .admission-button{
     padding: 10px 25px;
     border: none;
