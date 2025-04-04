@@ -163,7 +163,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="copyright">
-                <p>Powered by <a href="https://www.weacttech.com">Weact Tech</a></p>
+                <p>Powered by <a href="https://www.weacttech.com">Weact Tech</a>  |  © 2025 Jayam Vidhyashram CBSE. All rights reserved.</p>
             </div>
         </footer>
     );
