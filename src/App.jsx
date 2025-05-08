@@ -10,7 +10,7 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import HomePage from './pages/Homepage/Homepage';
 import TeamPage from './pages/TeamPage/TeamPage';
 import Gallery from './pages/galleryPage/galleryPage';
-import logo from './assets/s_logo.png';
+import { Analytics } from "@vercel/analytics/react"
 
 const RouteWrapper = ({ element, pageName }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -86,6 +86,7 @@ const App = () => {
         </svg>
       </a>
       <Footer />
+      <Analytics/>
     </BrowserRouter>
   );
 };
