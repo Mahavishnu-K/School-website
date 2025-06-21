@@ -12,6 +12,7 @@ import pta from '../../assets/pta.pdf';
 import './ContactPage.css';
 
 const ContactPage = () => {
+    
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -19,6 +20,7 @@ const ContactPage = () => {
         mobile: '',
         message: ''
     });
+
     const [status, setStatus] = useState({
         message: '',
         isError: false
