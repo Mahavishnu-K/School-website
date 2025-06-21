@@ -6,6 +6,9 @@ import fire from '../../assets/fire.pdf';
 import abcd from '../../assets/abcd.pdf';
 import recog from '../../assets/recog.pdf';
 import trust from '../../assets/trust.pdf';
+import deo from '../../assets/deo.pdf';
+import smc from '../../assets/smc.pdf';
+import pta from '../../assets/pta.pdf';
 import './ContactPage.css';
 
 const ContactPage = () => {
@@ -83,9 +86,11 @@ const ContactPage = () => {
             rte: recog,              // RTE recognition certificate
             building_safety: abcd,   // Building safety certificate (reusing abcd)
             fire_safety: fire,       // Fire safety certificate
-            deo: cbse,               // DEO certificate (reusing cbse)
+            deo: deo,               // DEO certificate (reusing cbse)
             health: sanitary,        // Health and sanitation certificates
-            calendar: calender       // Academic calendar (bonus)
+            calendar: calender,
+            smc: smc,
+            pta: pta      
         };
 
         const pdfUrl = pdfUrls[docType];
@@ -250,32 +255,32 @@ const ContactPage = () => {
                                 <tr>
                                     <td>2</td>
                                     <td>AFFILIATION NO.(IF APPLICABLE)</td>
-                                    <td>1930304</td>
+                                    <td>1931164</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>SCHOOL CODE (IF APPLICABLE)</td>
-                                    <td>55291</td>
+                                    <td>-</td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>COMPLETE ADDRESS WITH PIN CODE</td>
-                                    <td>MELPUTHIYANDAL TIRUVANNAMALAI-606603</td>
+                                    <td>COMPLETE ADDRESS</td>
+                                    <td>Kalpoondi Salai, Kilpennathur, Tiruvannamalai dist.</td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
                                     <td>PRINCIPAL NAME & QUALIFICATION</td>
-                                    <td>S.Thenmozhi M.Sc., M.Ed.,</td>
+                                    <td> S.Vasanthakumari M.sc., B.Ed.,</td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
                                     <td>SCHOOL EMAIL ID</td>
-                                    <td>vigneshschool.info@gmail.com</td>
+                                    <td>jayamvidhyashram@gmail.com</td>
                                 </tr>
                                 <tr>
                                     <td>7</td>
                                     <td>CONTACT DETAILS (LANDLINE/MOBILE)</td>
-                                    <td>+91-9384507030, 9384507040</td>
+                                    <td>+91-9790038537, +91-9841026427</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -285,16 +290,13 @@ const ContactPage = () => {
                 {/* Table B: Documents and Information */}
                 <div className="table-container">
                     <h3 className="table-heading">B. DOCUMENTS AND INFORMATION</h3>
-                    <div className="table-note">
-                        <strong>NOTE:</strong> THE SCHOOLS NEEDS TO UPLOAD THE SELF ATTESTED COPIES OF ABOVE LISTED DOCUMENTS BY CHAIRMAN/MANAGER/SECRETARY AND PRINCIPAL IN CASE, IT IS NOTICED AT LATER STAGE THAT UPLOADED DOCUMENTS ARE NOT GENUINE THEN SCHOOL SHALL BE LIABLE FOR ACTION AS PER NORMS.
-                    </div>
                     <div className="table-wrapper">
                         <table className="disclosure-table">
                             <thead>
                                 <tr>
                                     <th>S.NO</th>
                                     <th>DOCUMENTS/INFORMATION</th>
-                                    <th>UPLOAD DOCUMENTS</th>
+                                    <th>DOCUMENTS</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -324,18 +326,6 @@ const ContactPage = () => {
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT</td>
-                                    <td>
-                                        <button 
-                                            className="view-button"
-                                            onClick={() => handleViewPdf('noc')}
-                                        >
-                                            View
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
                                     <td>COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT'S RENEWAL IF APPLICABLE</td>
                                     <td>
                                         <button 
@@ -347,7 +337,7 @@ const ContactPage = () => {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>5</td>
+                                    <td>4</td>
                                     <td>COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE</td>
                                     <td>
                                         <button 
@@ -359,7 +349,7 @@ const ContactPage = () => {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>6</td>
+                                    <td>5</td>
                                     <td>COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY</td>
                                     <td>
                                         <button 
@@ -371,7 +361,7 @@ const ContactPage = () => {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>7</td>
+                                    <td>6</td>
                                     <td>COPY OF THE DEO CERTIFICATE SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATIONOR SELF CERTIFICATION BY SCHOOL</td>
                                     <td>
                                         <button 
@@ -383,7 +373,7 @@ const ContactPage = () => {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>8</td>
+                                    <td>7</td>
                                     <td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td>
                                     <td>
                                         <button 
@@ -408,7 +398,7 @@ const ContactPage = () => {
                                 <tr>
                                     <th>S.NO</th>
                                     <th>DOCUMENTS/INFORMATION</th>
-                                    <th>UPLOAD DOCUMENTS</th>
+                                    <th>DOCUMENTS</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -424,9 +414,36 @@ const ContactPage = () => {
                                         </button>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>SCHOOL MANAGEMENT COMMITTEE</td>
+                                    <td>
+                                        <button 
+                                            className="view-button"
+                                            onClick={() => handleViewPdf('smc')}
+                                        >
+                                            View
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>PARENTS TEACHERS ASSOCIATION</td>
+                                    <td>
+                                        <button 
+                                            className="view-button"
+                                            onClick={() => handleViewPdf('pta')}
+                                        >
+                                            View
+                                        </button>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
+                </div>
+                <div className="table-note">
+                    <strong>NOTE:</strong> THE SCHOOLS NEEDS TO UPLOAD THE SELF ATTESTED COPIES OF ABOVE LISTED DOCUMENTS BY CHAIRMAN/MANAGER/SECRETARY AND PRINCIPAL IN CASE, IT IS NOTICED AT LATER STAGE THAT UPLOADED DOCUMENTS ARE NOT GENUINE THEN SCHOOL SHALL BE LIABLE FOR ACTION AS PER NORMS.
                 </div>
             </div>
 
