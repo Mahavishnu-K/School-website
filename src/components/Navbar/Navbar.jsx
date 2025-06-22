@@ -38,7 +38,7 @@ const Navbar = () => {
                     { path: '/about', label: 'Academics' },
                     { path: '/team', label: 'Management' },
                     { path: '/gallery', label: 'Gallery' },
-                    { path: '/contact', label: 'Contact' }
+                    { path: '/contact', label: 'Contact & Mandatory Disclosure' }
                 ].map((link) => (
                     <Link 
                         key={link.path}
