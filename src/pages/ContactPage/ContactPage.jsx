@@ -9,6 +9,7 @@ import trust from '../../assets/trust.pdf';
 import deo from '../../assets/deo.pdf';
 import smc from '../../assets/smc.pdf';
 import pta from '../../assets/pta.pdf';
+import fee from '../../assets/fee.pdf';
 import './ContactPage.css';
 
 const ContactPage = () => {
@@ -92,6 +93,7 @@ const ContactPage = () => {
             health: sanitary,        // Health and sanitation certificates
             calendar: calender,
             smc: smc,
+            fee: fee,
             pta: pta      
         };
 
@@ -435,6 +437,18 @@ const ContactPage = () => {
                                         <button 
                                             className="view-button"
                                             onClick={() => handleViewPdf('pta')}
+                                        >
+                                            View
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>FEES DETAILS</td>
+                                    <td>
+                                        <button 
+                                            className="view-button"
+                                            onClick={() => handleViewPdf('fee')}
                                         >
                                             View
                                         </button>
