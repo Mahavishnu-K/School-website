@@ -10,7 +10,7 @@ import deo from '../../assets/deo.pdf';
 import smc from '../../assets/smc.pdf';
 import pta from '../../assets/pta.pdf';
 import fee from '../../assets/fee.pdf';
-import manda from '../../assets/Mandatorydisclousure.pdf';
+import manda from '../../assets/Mandatorydisclosure.pdf';
 import './ContactPage.css';
 
 const ContactPage = () => {
