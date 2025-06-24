@@ -10,6 +10,7 @@ import deo from '../../assets/deo.pdf';
 import smc from '../../assets/smc.pdf';
 import pta from '../../assets/pta.pdf';
 import fee from '../../assets/fee.pdf';
+import manda from '../../assets/Mandatorydisclousure.pdf';
 import './ContactPage.css';
 
 const ContactPage = () => {
@@ -94,7 +95,8 @@ const ContactPage = () => {
             calendar: calender,
             smc: smc,
             fee: fee,
-            pta: pta      
+            pta: pta,
+            manda: manda
         };
 
         const pdfUrl = pdfUrls[docType];
@@ -449,6 +451,18 @@ const ContactPage = () => {
                                         <button 
                                             className="view-button"
                                             onClick={() => handleViewPdf('fee')}
+                                        >
+                                            View
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>MANDATORY DISCLOSURE</td>
+                                    <td>
+                                        <button 
+                                            className="view-button"
+                                            onClick={() => handleViewPdf('manda')}
                                         >
                                             View
                                         </button>
